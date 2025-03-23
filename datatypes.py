@@ -7,14 +7,16 @@ b = 7.058900123898976509
 #float will take 15 decimal
 print(b,type(b))
 #type convertion
-#c = input("enter a specific char") 
+c = input("enter a specific char") 
 """not declare the typecast it always a str"""
-#print(c,type(c))
+print(c,type(c))
 
-#d = float(input("enter the float"))
+d = float(input("enter the float"))
 """if u declare the type any other type u assign it throws error"""
-#print(d,type(d))
+print(d,type(d))
 
-e: int = 8
-f:str = e
+e = 19
+f = e
 print(f,type(f))
+i = float(e)
+print(i,type(i))
