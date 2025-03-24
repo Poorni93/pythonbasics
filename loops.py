@@ -16,6 +16,3 @@ while(b<20):
    if(b==17):
       continue
    print(b)
-
-   
-      
