@@ -1,29 +1,42 @@
 #hotel ordered
 
 menu = {"vada":5,"pongal":50,"dosa":30,"idly":20}
-money=money2=money4=money3=0
+stack = {"vada":10,"pongal":20,"dosa":10,"idly":15}
+
+money=0
+stackofvada=0
 i = 1
 while(i>0):
- a = input("if you need to order any food type yes or no: ")
+ a = input("if you need to order any food type y/Y or n/N: ")
  
- if(a == "yes"):
-     print("order a food")
-     b = input("what do you want 1.vada 2.pongal or 3.idly 4.dosa: ")
-     d = int(input("quantity: "))
-     if(b=="1"):
-        c = menu["vada"]
-        money = d*c+money
-     if(b=="2"):
-      e = menu["pongal"]
-      money2 = d*e+money2
-     if(b=="3"):
-       f = menu["idly"]
-       money3=d*f+money3
-     if(b=="4"):
-       g = menu["dosa"]
-       money4=d*g+money4    
+ if(a == "y" or a=="Y"):
+     print("order a food menu is 1.vada 2.pongal 3.idly 4.dosa ")
+     ordered = int(input("what do you want: "))
+     if(ordered < 5):
+         quantity = int(input("quantity: "))
+         if(ordered=="1"):
+             sv=stack["vada"]
+             stackofvada =  sv - quantity
+             print(stackofvada)
+             if(stackofvada>=0):
+              c = menu["vada"]
+              money = quantity*c+money
+             else:
+              print("no stack")
+      
+         if(ordered=="2"):
+             e = menu["pongal"]
+             money = quantity*e+money
+         if(ordered=="3"):
+              f = menu["idly"]
+              money=quantity*f+money
+         if(ordered=="4"):
+          g = menu["dosa"]
+          money=quantity*g+money 
+     else:
+       print("number not in menu") 
  else:
-    totalamount = money2+money+money3+money4
+    totalamount = money
     print(totalamount)
     break
     
