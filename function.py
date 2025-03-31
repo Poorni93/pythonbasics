@@ -14,7 +14,7 @@ def buscar(end):
 buscar(5)
 
 #direct value in argument
-def dvfun(quality,name="poorni"):
+def dvfun(quality,name="ppoorni"):
     print(" "+ quality +","+ name +"")
 
 dvfun("good girl")

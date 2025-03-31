@@ -16,3 +16,9 @@ while(b<20):
    if(b==17):
       continue
    print(b)
+a=4
+if a%2==0 :
+ 
+ print("even")
+else:
+   print("odd")

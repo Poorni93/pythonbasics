@@ -20,3 +20,4 @@ f = e
 print(f,type(f))
 i = float(e)
 print(i,type(i))
+ 

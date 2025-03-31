@@ -34,4 +34,4 @@ print(set3.intersection(set4))
 #dictionary
 dic = {1:"laddu",2:"kesari",3:"alwa"}
 
-print(dic,type(dic))
+print(dic,type(dic),dic[3])
